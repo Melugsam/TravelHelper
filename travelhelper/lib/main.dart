@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:travelhelper/travel_helper_app.dart';
+import 'welcome.dart';
 void main() {
   runApp(Main());
 }
@@ -15,7 +15,7 @@ class Main extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       home: SafeArea(
-        child: TravelHelperApp(),
+        child: Scaffold(body: Welcome()),
       ),
     );
   }

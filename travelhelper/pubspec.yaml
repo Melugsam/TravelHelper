@@ -38,6 +38,7 @@ dependencies:
   animated_text_kit: ^4.2.2
   http: ^1.1.0
   google_fonts: ^6.1.0
+  bloc: ^8.1.2
 
 dev_dependencies:
   flutter_test:
