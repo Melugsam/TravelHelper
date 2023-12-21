@@ -8,6 +8,7 @@ import 'Tiles/tile_weather.dart';
 Widget RequestsTiles(LoadedState loadedState) {
   return Material(
     child: Column(children: [
+      SizedBox(height: 16.0),
       Text(
         "Название города: ${loadedState.cityInfo?.name ?? ""}",
         style: GoogleFonts.rubik(
@@ -16,6 +17,7 @@ Widget RequestsTiles(LoadedState loadedState) {
           color: Colors.deepPurple.shade600,
         ),
       ),
+      SizedBox(height: 16.0),
       tileHotels(loadedState),
       tileWeather(loadedState),
       tileAttractions(loadedState)

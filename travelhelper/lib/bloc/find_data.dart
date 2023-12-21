@@ -62,7 +62,7 @@ class TravelBloc extends Bloc<TravelEvent, TravelState> {
 
         emit(LoadedState(cityInfo: cityInfo, hotels: hotels, weather: weather, attractions: attractions));
       } catch (e) {
-        // Обработка ошибок
+        print(e);
         emit(ErrorState("Произошла ошибка поиска"));
       }
     });

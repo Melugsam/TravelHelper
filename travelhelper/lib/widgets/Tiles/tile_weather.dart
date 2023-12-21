@@ -7,7 +7,6 @@ Widget tileWeather(LoadedState loadedState) {
   return Material(
     child: Column(
       children: [
-        SizedBox(height: 16.0),
         ExpansionTile(
           title: Text(
             "Погода",
@@ -19,17 +18,26 @@ Widget tileWeather(LoadedState loadedState) {
           ),
           children: [
             Text(loadedState.weather!.name.toString(),
+                textAlign: TextAlign.center,
                 style: GoogleFonts.rubik(
-                    fontSize: 20, fontWeight: FontWeight.w600, color: Colors.purple.shade300)),
-            Text("${loadedState.weather!.fixTemp(loadedState.weather!.currTemp)}°C",
+                    fontSize: 20,
+                    fontWeight: FontWeight.w600,
+                    color: Colors.purple.shade300)),
+            Text(
+                "${loadedState.weather!.fixTemp(loadedState.weather!.currTemp)}°C",
+                textAlign: TextAlign.center,
                 style: GoogleFonts.rubik(
-                    fontSize: 16, fontWeight: FontWeight.w400, color: Colors.purple.shade300)),
+                    fontSize: 16,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.purple.shade300)),
             Text(loadedState.weather!.weatherDescription,
+                textAlign: TextAlign.center,
                 style: GoogleFonts.rubik(
-                    fontSize: 16, fontWeight: FontWeight.w300, color: Colors.purple.shade300)),
+                    fontSize: 16,
+                    fontWeight: FontWeight.w300,
+                    color: Colors.purple.shade300)),
           ],
         ),
-        SizedBox(height: 16.0),
       ],
     ),
   );

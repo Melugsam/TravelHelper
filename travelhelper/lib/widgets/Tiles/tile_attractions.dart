@@ -7,7 +7,6 @@ Widget tileAttractions(LoadedState loadedState) {
   return Material(
     child: Column(
       children: [
-        SizedBox(height: 16.0),
         ExpansionTile(
           title: Text(
             "Достопримечательности",
@@ -26,19 +25,21 @@ Widget tileAttractions(LoadedState loadedState) {
                   var attraction = loadedState.attractions![index];
                   return Column(
                     children: [
+                      SizedBox(height: 8.0),
                       Text(
+                        textAlign: TextAlign.center,
                         "${attraction?.name ?? ""}",
                         style: GoogleFonts.rubik(
                           fontSize: 16,
-                          fontWeight: FontWeight.w400,
+                          fontWeight: FontWeight.w600,
                           color: Colors.purple.shade300,
                         ),
                       ),
                        Text(
-                        "Рейтинг: ${attraction?.rate ?? ""}",
-                        style: TextStyle(fontSize: 14, color: Colors.black),
+                        textAlign: TextAlign.center,
+                        "Рейтинг: ${attraction?.rate ?? ""}★",
+                        style: TextStyle(fontSize: 14, color: Colors.purple.shade300),
                       ),
-                      SizedBox(height: 16.0),
                     ],
                   );
                 },

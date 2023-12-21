@@ -80,7 +80,7 @@ class _TravelHelperAppState extends State<TravelHelperApp> {
                     SizedBox(height: 16.0),
                     ElevatedButton(
                       onPressed: () {
-                        final String cityName = cityNameController.text;
+                        final String cityName = validateName(cityNameController.text);
                         final double radius =
                             double.tryParse(radiusController.text) ?? 2000.0;
                         handleSearch(cityName, radius);
@@ -114,4 +114,8 @@ class _TravelHelperAppState extends State<TravelHelperApp> {
   void handleSearch(String cityName, double radius) {
     print('Название города: $cityName, Радиус: $radius');
   }
+
+  String validateName(String s) {
+  return s.replaceAll(' ', '');
+}
 }
