@@ -5,7 +5,7 @@ import 'package:travelhelper/models/city_info.dart';
 
 Future<CityClass?> fetchCityData(String cityName) async {
   const String url = 'https://worldwide-hotels.p.rapidapi.com/typeahead';
-  const String apiKey = 'b90067a9b8msh9395067bc105ddfp16fba8jsnaa403b98ff76';
+  const String apiKey = 'bf4425dea0msh8ce760c3fd4b9a5p105e4fjsn3ebf4a959132';
   const String host = 'worldwide-hotels.p.rapidapi.com';
 
   final Map<String, String> headers = {

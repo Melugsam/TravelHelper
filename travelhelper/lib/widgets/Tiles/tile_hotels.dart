@@ -20,7 +20,7 @@ Widget tileHotels(LoadedState loadedState) {
             Container(
               height: 200, // Установите желаемую высоту для прокрутки
               child: ListView.builder(
-                itemCount: loadedState.hotels!.length,
+                itemCount: loadedState.hotels?.length,
                 itemBuilder: (context, index) {
                   var hotel = loadedState.hotels![index];
                   return Column(

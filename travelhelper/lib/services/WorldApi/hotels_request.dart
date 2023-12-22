@@ -6,7 +6,7 @@ import 'package:travelhelper/models/hotel_info.dart';
 Future<List<HotelInfo?>?> fetchHotelsData(String locationId) async {
   List<HotelInfo?> res = [];
   const String url = 'https://worldwide-hotels.p.rapidapi.com/search';
-  const String apiKey = 'b90067a9b8msh9395067bc105ddfp16fba8jsnaa403b98ff76';
+  const String apiKey = 'bf4425dea0msh8ce760c3fd4b9a5p105e4fjsn3ebf4a959132';
   const String host = 'worldwide-hotels.p.rapidapi.com';
 
   final Map<String, String> headers = {
