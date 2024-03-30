@@ -10,7 +10,7 @@ Future<List<AttractionInfo?>?> fetchAttractions(
     Uri.parse(
         'https://opentripmap-places-v1.p.rapidapi.com/ru/places/radius?radius=$radius&lon=$longitude&lat=$latitude'),
     headers: {
-      'X-RapidAPI-Key': 'b90067a9b8msh9395067bc105ddfp16fba8jsnaa403b98ff76',
+      'X-RapidAPI-Key': '',
       'X-RapidAPI-Host': 'opentripmap-places-v1.p.rapidapi.com',
     },
   );
