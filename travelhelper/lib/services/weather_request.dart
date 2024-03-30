@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 
 Future<WeatherData> getWeatherData(String cityName) async {
   final baseUrl = 'https://api.openweathermap.org/data/2.5/weather';
-  final apiKey = '28533ab575fac6ad3628532cc043a142';
+  final apiKey = '';
   final encodedCity = Uri.encodeComponent(cityName);
   final url = '$baseUrl?q=$encodedCity&appid=$apiKey&units=metric';
 
